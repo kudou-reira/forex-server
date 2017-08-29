@@ -4,7 +4,7 @@ import { FETCH_DATA, FETCH_TIME_DATA, RENDER_CHART } from './types';
 
 export const fetchData = (currency) => {
 	return async (dispatch) => {
-		const res = await axios.get(`http://api.fixer.io/latest?base=${currency}`);
+		const res = await axios.get(`https://api.fixer.io/latest?base=${currency}`);
         const temp  = res.data.rates;
         var arr = Object.keys(temp).map(function (key) { 
           return (
@@ -45,7 +45,7 @@ export const fetchData = (currency) => {
 
 export const fetchTimeData = (currency, days) => {
   return (dispatch) => {
-    axios.get('http://localhost:5000/latest', {
+    axios.get('https://***.herokuapp.com:443/latest', {
       params: {
         base: currency,
         amountOfDays: days
