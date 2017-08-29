@@ -45,7 +45,7 @@ export const fetchData = (currency) => {
 
 export const fetchTimeData = (currency, days) => {
   return (dispatch) => {
-    axios.get('https://***.herokuapp.com:443/latest', {
+    axios.get('https://forex-kudou-reira.herokuapp.com:443/latest', {
       params: {
         base: currency,
         amountOfDays: days
