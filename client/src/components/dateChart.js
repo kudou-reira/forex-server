@@ -10,7 +10,7 @@ import {
 import _ from 'lodash';
 
 
-class DateChart2 extends Component {
+class DateChart extends Component {
 
   componentWillMount(){
     this.setState({tempColor: this.props.colors})
@@ -60,4 +60,4 @@ class DateChart2 extends Component {
   }
 }
 
-export default DateChart2;
+export default DateChart;

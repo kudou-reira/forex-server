@@ -9,7 +9,7 @@ import Bars from './bars';
 import ChartComponent from './ui/responsiveChart';
 
 
-class PracticeChart extends Component {
+class BarChart extends Component {
 
 	constructor(){
 		super()
@@ -102,5 +102,4 @@ class PracticeChart extends Component {
 	}
 }
 
-// export default ChartComponent(PracticeChart);
-export default ChartComponent(PracticeChart);
+export default ChartComponent(BarChart);

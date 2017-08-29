@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PracticeChart from './practiceChart';
-import DateChart2 from './dateChart2';
+import BarChart from './barChart';
+import DateChart from './dateChart';
 import Header from './header';
 
 import Select from 'react-select';
@@ -147,7 +147,7 @@ class App extends Component {
 		                Still loading
 		              </div>
 		            : <div>
-			              <PracticeChart
+			              <BarChart
 							fakeData={this.props.data}
 							colors={this.state.colors}
 						  />
@@ -170,7 +170,7 @@ class App extends Component {
 		            : <div className="recharts-wrapper">
 		            	{this.renderAmountOfDays()}
 		            	{this.renderScale()}
-				        <DateChart2 
+				        <DateChart
 				        	currency={this.props.currencyTime}
 				        	colors={this.state.colors}
 				        	base={this.state.currencyQuery}

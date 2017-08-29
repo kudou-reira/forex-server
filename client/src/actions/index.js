@@ -45,7 +45,7 @@ export const fetchData = (currency) => {
 
 export const fetchTimeData = (currency, days) => {
   return (dispatch) => {
-    axios.get('http://localhost:5000/latest', {
+    axios.get('https://localhost:5000/latest', {
       params: {
         base: currency,
         amountOfDays: days
